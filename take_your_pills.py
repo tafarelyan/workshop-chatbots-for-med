@@ -15,9 +15,6 @@ def start(update, context):
 
 def alarm(context):
     job = context.job
-    print(context, dir(context))
-    print(context.job, dir(context.job))
-    print(context.job.context, dir(context.job.context))
     context.bot.send_message(job.context, text='Tome o seu remédio!')
 
 
